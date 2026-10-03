@@ -1,0 +1,11 @@
+pilot,spec,outcome,predictor_interaction,estimate,ci95_lo,ci95_hi,N_raw,N_effective,notes
+"historical","legacy=Infra (Equinox), env=PAGES2k dT, century control, cluster-SE by NGA","decline (CrisisDB binary)","dT x Infra",0.278,-0.007,0.562,72,21 NGAs,"right sign, wide CI, includes ~0"
+"historical-alt-legacy","legacy=Hier instead of Infra","decline","dT x Hier",-0.208,-0.888,0.471,72,21 NGAs,"SIGN FLIPS under legitimate alternate legacy measure"
+"historical-alt-outcome","outcome=Severity>=5","severe crisis","dT x Infra",0.271,-0.081,0.623,72,21 NGAs,"magnitude stable at edge of CI"
+"contemporary","realloc = drop in ag VA share 2000-21; env = country temp anomaly 2011-21; controls lngdp+agshare2000; HC1","realloc","dT x urban2000",0.083,-0.259,0.426,162,162,"OPPOSITE sign to hypothesis (more urbanized -> more realloc)"
+"contemporary-alt-legacy","legacy = agricultural land share 2000","realloc","dT x agland2000",0.067,-0.303,0.437,162,162,"also positive, wide CI"
+"contemporary-alt-model","realloc on dT x agland without urban","realloc","dT x agland2000",0.064,-0.305,0.434,162,162,"robust positive sign"
+"future","T* from yield-temp response (straw: dominant=yield-max)","T* crossing dT","switch cost 0%",NA,NA,NA,173 countries,173,"50 countries reach T* <= 4C (median 1.05C); 83 negative/infinite"
+"future-s10","same, switching cost 10%","T* crossing dT",NA,NA,NA,173,173,"45 countries (median 1.10C); high sensitivity to s"
+"future-s20","same, switching cost 20%","T* crossing dT",NA,NA,NA,173,173,"41 countries (median 1.50C)"
+"join diagnostics","02_historical_pilot build",NA,NA,NA,NA,169,NA,"NGA map 99%, legacy join 98%, dT join 62% (PAGES lacks Africa)"
